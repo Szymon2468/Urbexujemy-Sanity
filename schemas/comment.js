@@ -26,10 +26,10 @@ export default {
       validation: (Rule) => Rule.min(1)
     },
     {
-      name: 'place',
-      title: 'Miejscówka',
+      name: 'article',
+      title: 'Artykuł',
       type: 'reference',
-      to: { type: 'place' },
+      to: { type: 'articles' },
       validation: (Rule) => Rule.required()
     },
     {
@@ -37,11 +37,16 @@ export default {
       title: 'Komentarz',
       type: 'blockContent',
       validation: (Rule) => Rule.required()
+    },
+    {
+      name: 'date',
+      title: 'Data dodania',
+      type: 'datetime'
     }
   ],
   preview: {
     select: {
-      title: 'comment.author'
+      title: 'author'
     }
   }
 };
