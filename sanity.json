@@ -12,7 +12,6 @@
     "@sanity/default-layout",
     "@sanity/default-login",
     "@sanity/desk-tool",
-    "dashboard-widget-netlify",
     "@sanity/dashboard"
   ],
   "env": {
@@ -28,10 +27,6 @@
     {
       "implements": "part:@sanity/base/root",
       "path": "plugins/sanity-plugin-tutorial/CustomDefaultLayout"
-    },
-    {
-      "implements": "part:@sanity/dashboard/config",
-      "path": "src/dashboardConfig.js"
     }
   ]
 }
