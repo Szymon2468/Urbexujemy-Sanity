@@ -26,6 +26,18 @@ export default {
       validation: (Rule) => Rule.required()
     },
     {
+      name: 'coordN',
+      title: 'Koordynat N',
+      type: 'string',
+      validation: (Rule) => Rule.required()
+    },
+    {
+      name: 'coordE',
+      title: 'Koordynat E',
+      type: 'string',
+      validation: (Rule) => Rule.required()
+    },
+    {
       name: 'ourRating',
       title: 'Nasza Ocena',
       type: 'number',
