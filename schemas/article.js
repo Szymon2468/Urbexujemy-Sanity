@@ -80,8 +80,7 @@ export default {
       name: 'teaser',
       title: 'Tizer',
       type: 'text',
-      validation: (Rule) => Rule.required(),
-      validation: (Rule) => Rule.max(250)
+      validation: (Rule) => Rule.required()
     },
     {
       name: 'place',
